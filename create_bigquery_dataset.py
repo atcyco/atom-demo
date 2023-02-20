@@ -6,6 +6,7 @@ client = bigquery.Client()
 # Create the dataset for the mortgage data
 dataset_id = 'atom_demo_mortgage_data_test'
 dataset = bigquery.Dataset(client.dataset(dataset_id))
+
 dataset.location = 'US'
 client.create_dataset(dataset)
 
