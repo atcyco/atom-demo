@@ -2,7 +2,7 @@ import json
 import uuid
 from google.cloud import storage
 
-def simulate_new_mortgage_application():
+def simulate_new_mortgage_application(request):
     # Generate some sample data for a mortgage application
     name = "John Doe"
     age = 35
